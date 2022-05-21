@@ -10,7 +10,7 @@ const criarACC = () => {
   }
 
   if (user) {
-    alert("User Already Registered");
+    alert("Usuário ja cadastrado! Por favor escolha outro");
     return;
   }
   if (
@@ -26,15 +26,15 @@ const criarACC = () => {
         JSON.stringify({
           username: form.username.value,
           password: form.password.value,
-          messages: [],
+          recados: [],
         })
       );
       window.location.href = "home.html";
       return;
     } else {
-      alert("Passwords does not match");
+      alert("As senhas não correspondem");
     }
   } else {
-    alert("Not accept blank user");
+    alert("Não são aceitos campos em branco no formulário!");
   }
 };

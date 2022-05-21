@@ -18,7 +18,7 @@ function checkLogged() {
 
 function MostrarMensagem() {
   let HTMLmessages = "";
-  const messages = user.messages;
+  const messages = user.recados;
   if (messages.length) {
     messages.forEach((message, index) => {
       HTMLmessages += `
@@ -54,11 +54,11 @@ function salvarRecado() {
   };
 
   if (isEdit) {
-    user.messages[IdEdit] = message;
+    user.recados[IdEdit] = message;
     isEdit = false;
     IdEdit = null;
   } else {
-    user.messages.push(message);
+    user.recados.push(message);
   }
 
   localStorage.setItem(user.username, JSON.stringify(user));
@@ -67,15 +67,15 @@ function salvarRecado() {
 }
 
 function deleteMessage(index) {
-  user.messages.splice(index, 1);
+  user.recados.splice(index, 1);
   localStorage.setItem(user.username, JSON.stringify(user));
   MostrarMensagem();
 }
 
 function editMessage(index) {
   const formMessage = document.getElementById("form-message");
-  formMessage.message.value = user.messages[index].description;
-  formMessage.details.value = user.messages[index].details;
+  formMessage.message.value = user.recados[index].description;
+  formMessage.details.value = user.recados[index].details;
   isEdit = true;
   IdEdit = index;
 }
