@@ -1,0 +1,99 @@
+body {
+  background-image: url(../images/cracked-wood-with-a-dark-background.jpg);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  margin: 7px;
+  background: linear-gradient(
+    to bottom,
+    rgb(114, 38, 165) 0%,
+    rgb(144, 38, 165) 100%
+  );
+}
+
+.section:first-child {
+  background-image: url(../images/data-extraction-animate.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 10px;
+}
+
+.section-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs > input {
+  font-size: 16px;
+  padding: 4px;
+  border: 1px red solid;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: black;
+  color: aliceblue;
+}
+
+.inputs > input:focus {
+  background-color: black;
+  outline: none;
+}
+
+.inputs > input::placeholder {
+  padding-left: 8px;
+}
+
+.inputs {
+  margin-bottom: 24px;
+}
+
+#btn-login {
+  font-size: 16px;
+  background-color: chartreuse;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#criar-conta {
+  color: black;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
+  cursor: pointer;
+}

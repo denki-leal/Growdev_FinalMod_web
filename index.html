@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Sistema de Recados</title>
+    <link rel="stylesheet" href="./css/style-index.css" />
+  </head>
+  <body id="body">
+    <div id="container">
+      <div class="section"></div>
+      <div class="section">
+        <form id="formulario">
+          <div id="titulo">
+            <h2>SEJA BEM-VINDO!</h2>
+            <h2>Esse é o sistema de recados especial!</h2>
+          </div>
+          <div class="inputs">
+            <input
+            id="input-username"
+            type="text"
+            placeholder="Usuário"
+            name="username"
+          />
+          <input
+            id="input-password"
+            name="password"
+            type="password"
+            placeholder="Senha"
+          />
+          </div>
+          <button type="button" id="btn-login" onclick="login()">Entrar!</button>
+          <br>
+          <a id="criar-conta" href="./criarConta.html">Cadastre-se agora!</a>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

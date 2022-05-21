@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central | Recados</title>
+    <link rel="stylesheet" href="./css/style-home.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recados</h1>
+
+      <div>
+        <button id="logout" onclick="logout()">Logout</button>
+      </div>
+    </header>
+    <main>
+      <form id="form-message">
+        <input
+          id="input-descricao"
+          type="text"
+          name="message"
+          placeholder="Descrição"
+        />
+        <input
+          id="input-detalhes"
+          type="text"
+          name="details"
+          placeholder="Detalhamento"
+        />
+        <button
+          type="submit"
+          id="btn-salvar"
+          value="Salvar"
+          onclick="salvarRecado()"
+        >
+          Salvar
+        </button>
+      </form>
+
+      <table id="tabela">
+        <thead class="table-head">
+          <th class="table-id">#</th>
+          <th class="table-description">Descrição</th>
+          <th class="table-details">Detalhamento</th>
+          <th class="table-buttons">Ação</th>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </main>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>

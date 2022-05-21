@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta de recados</title>
+    <link rel="stylesheet" href="./css/style-criar.css" />
+    <script src="./js/global.js"></script>
+  </head>
+  <body id="body">
+    <div id="container">
+      <div class="section"></div>
+      <div class="section">
+          <form id="form">
+        <div id="title"><h1>CRIAR CONTA DO SISTEMA</h1></div>
+        <div class="inputs">
+          <input
+            id="input-username"
+            type="text"
+            placeholder="Usuário"
+            name="username"
+          />
+          <input
+            name="password"
+            id="input-password"
+            type="password"
+            placeholder="Senha"
+          />
+          <input
+            id="repeat-password"
+            name="password-repeat"
+            type="password"
+            placeholder="Repetir Senha"
+          />
+        </div>
+        <input type="button" id="btn-create-account" onclick="criarACC()" value="CADASTRE-SE">
+        <br><br>
+        <a id="login-button-page" href="./index.html">LOGIN</a>
+      </form> 
+      </div>
+      <script src="./js/criarconta.js"></script>
+  </body>
+</html>
